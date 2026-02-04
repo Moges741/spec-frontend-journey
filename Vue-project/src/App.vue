@@ -1,9 +1,23 @@
 <script setup>
-</script>
+import {ref} from 'vue';
+const name = ref('');
+const club = ref("SPEC");
+         
+         
+</script> 
 
 <template>
   <div>
+    <p>DAY 1: getting started</p>
     <h1>Hello SPEC Developers </h1>
+    <p>DAY 2 : Interpolation and Input binding </p>
+    
+    <h4>This is from {{ club }}</h4>
+    <input v-model="name" placeholder="write Ur name"/>
+    <h2 v-if="name !== ''">Hello {{ name }}!</h2>
+
+
+    
   </div>
 </template>
 
