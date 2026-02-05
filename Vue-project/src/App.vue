@@ -1,4 +1,5 @@
 <script setup>
+import UserCard from './components/UserCard.vue';
 import {ref} from 'vue';
 const name = ref('');
 const club = ref("SPEC");
@@ -16,12 +17,22 @@ const club = ref("SPEC");
     <input v-model="name" placeholder="write Ur name"/>
     <h2 v-if="name !== ''">Hello {{ name }}!</h2>
 
+    <p>DAY 3 : Component and Props</p>
+    <div class="userCard">
+    <UserCard name="Beka" role="Developer"/>
+    <UserCard name="Abel" role="Designer"/>
+    <UserCard name="Daniel" role="Manager"/>
+    </div>
 
-    
   </div>
 </template>
 
 <style scoped>
+.userCard{
+  display: flex;
+  gap: 10px;
+
+}
 .logo {
   height: 6em;
   padding: 1.5em;
