@@ -3,7 +3,9 @@ import UserCard from './components/UserCard.vue';
 import {ref} from 'vue';
 const name = ref('');
 const club = ref("SPEC");
-         
+const handleProfileView = (name) => {
+  alert(`Viewing profile of ${name}`);
+}
          
 </script> 
 
@@ -19,9 +21,9 @@ const club = ref("SPEC");
 
     <p>DAY 3 : Component and Props</p>
     <div class="userCard">
-    <UserCard name="Beka" role="Developer"/>
-    <UserCard name="Abel" role="Designer"/>
-    <UserCard name="Daniel" role="Manager"/>
+    <UserCard name="Beka" role="Developer" status="online" @view-profile="handleProfileView"/>
+    <UserCard name="Abel" role="Designer" status="offline" @view-profile="handleProfileView"/>
+    <UserCard name="Daniel" role="Manager" status="online" @view-profile="handleProfileView"/>
     </div>
 
   </div>
