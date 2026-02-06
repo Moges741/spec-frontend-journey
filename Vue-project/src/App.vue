@@ -6,7 +6,12 @@ const club = ref("SPEC");
 const handleProfileView = (name) => {
   alert(`Viewing profile of ${name}`);
 }
-         
+        // practice
+        const message = ref('Hello Vue 3!');  
+        const isInPool = ref(true);
+        const handlePool = () =>{
+          isInPool.value = !isInPool.value;
+        }
 </script> 
 
 <template>
@@ -26,6 +31,17 @@ const handleProfileView = (name) => {
     <UserCard name="Daniel" role="Manager" status="online" @view-profile="handleProfileView"/>
     </div>
 
+  </div>
+
+
+  <div>
+    <h2>Practice</h2>
+    <input type="text" v-model="message" placeholder="write">
+    <p>{{ message }}</p>
+
+    <p v-if="isInPool">It is in Pool ....</p>
+    <p v-if="!isInPool">jump into pool ....</p>
+    <button @click="handlePool">{{isInPool ? "in pool" : "jump"}}</button>
   </div>
 </template>
 
