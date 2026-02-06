@@ -46,8 +46,8 @@ const state = reactive({
   name: 'John',
   age: 30
 });
-In this example, state is a reactive object with properties name and age. You can access the
-properties of state directly, and any changes to state will automatically trigger updates to the DOM.
+
+
 
 
 
