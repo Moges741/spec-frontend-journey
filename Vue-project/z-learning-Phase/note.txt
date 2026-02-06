@@ -1,0 +1,53 @@
+DAY - 4
+Reactivity in Vue 3
+- Vue 3 uses a new reactivity system based on Proxies, 
+which allows for better performance and more efficient memory usage compared to Vue 2's Object.defineProperty.
+- The new reactivity system in Vue 3 is more efficient and 
+can track changes to arrays and objects more effectively, 
+making it easier to work with complex data structures.
+- Vue 3 also introduces a new Composition API, which allows developers to 
+organize and reuse logic in a more flexible way compared to the Options API
+ used in Vue 2. The Composition API provides a more modular and scalable approach 
+ to building components, making it easier to manage state and side effects in larger applications.
+- The Composition API in Vue 3 allows developers to create reusable logic and state
+ management patterns, making it easier to share code across components and 
+ improve code organization. It also provides better TypeScript support, allowing
+  for improved type inference and better developer experience when working with TypeScript in Vue applications.
+
+  Using ref and reactive
+- In Vue 3, the ref function is used to create a reactive reference to a value, 
+while the reactive function is used to create a reactive object.
+- The ref function is typically used for primitive values, such as strings, numbers, and 
+booleans, while the reactive function is used for objects and arrays.
+- When using ref, you can access the value of the reference using the .value property,
+ while with reactive, you can access the properties of the object directly.
+- Both ref and reactive allow you to create reactive data that can be used in your Vue components, 
+and they will automatically trigger updates to the DOM when the data changes. 
+The choice between ref and reactive depends on the type of data you are working with and your specific use case.
+- In Vue 3, the ref function is used to create a reactive reference to a value,
+    while the reactive function is used to create a reactive object. The ref 
+    function is typically used for primitive values, such as strings, numbers, 
+    and booleans, while the reactive function is used for objects and arrays. 
+    When using ref, you can access the value of the reference using the .value 
+    property, while with reactive, you can access the properties of the object 
+    directly. Both ref and reactive allow you to create reactive data that can 
+    be used in your Vue components, and they will automatically trigger updates
+     to the DOM when the data changes. 
+
+
+     example 1 : in VUE 3, you can use the ref function to create a reactive reference to a primitive value like this:
+import { ref } from 'vue';
+const count = ref(0);
+In this example, count is a reactive reference to the value 0. You can access the 
+value of count using count.value, and any changes to count will automatically trigger updates to the DOM.
+example 2 : In Vue 3, you can use the reactive function to create a reactive object like this:
+import { reactive } from 'vue';
+const state = reactive({
+  name: 'John',
+  age: 30
+});
+In this example, state is a reactive object with properties name and age. You can access the
+properties of state directly, and any changes to state will automatically trigger updates to the DOM.
+
+
+
