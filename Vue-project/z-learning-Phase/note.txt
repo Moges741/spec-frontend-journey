@@ -35,7 +35,7 @@ The choice between ref and reactive depends on the type of data you are working 
      to the DOM when the data changes. 
 
 
-     example 1 : in VUE 3, you can use the ref function to create a reactive reference to a primitive value like this:
+example 1 : in VUE 3, you can use the ref function to create a reactive reference to a primitive value like this:
 import { ref } from 'vue';
 const count = ref(0);
 In this example, count is a reactive reference to the value 0. You can access the 
