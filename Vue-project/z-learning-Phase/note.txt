@@ -32,7 +32,7 @@ The choice between ref and reactive depends on the type of data you are working 
     property, while with reactive, you can access the properties of the object 
     directly. Both ref and reactive allow you to create reactive data that can 
     be used in your Vue components, and they will automatically trigger updates
-     to the DOM when the data changes. 
+     to the DOM when the data changes............
 
 
 example 1 : in VUE 3, you can use the ref function to create a reactive reference to a primitive value like this:
