@@ -1,5 +1,6 @@
 <script setup>
 import UserCard from './components/UserCard.vue';
+import CounterApp from './components/CounterApp.vue';
 import {ref} from 'vue';
 const name = ref('');
 const club = ref("SPEC");
@@ -43,6 +44,8 @@ const handleProfileView = (name) => {
     <p v-if="!isInPool">jump into pool ....</p>
     <button @click="handlePool">{{isInPool ? "in pool" : "jump"}}</button>
   </div>
+
+<CounterApp/>
 </template>
 
 <style scoped>
