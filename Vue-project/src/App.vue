@@ -4,6 +4,7 @@ import CounterApp from './components/CounterApp.vue';
 import More from './components/More.vue';
 import PasswordStrength from './components/PasswordStrength.vue';
 import {ref} from 'vue';
+import ToggleCard from './components/ToggleCard.vue';
 const name = ref('');
 const club = ref("SPEC");
 const handleProfileView = (name) => {
@@ -50,6 +51,7 @@ const handleProfileView = (name) => {
 <CounterApp/>
 <More/>
 <PasswordStrength />
+<ToggleCard/>
 </template>
 
 <style scoped>
