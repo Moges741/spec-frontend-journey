@@ -1,6 +1,8 @@
 <script setup>
 import UserCard from './components/UserCard.vue';
 import CounterApp from './components/CounterApp.vue';
+import More from './components/More.vue';
+import PasswordStrength from './components/PasswordStrength.vue';
 import {ref} from 'vue';
 const name = ref('');
 const club = ref("SPEC");
@@ -46,6 +48,8 @@ const handleProfileView = (name) => {
   </div>
 
 <CounterApp/>
+<More/>
+<PasswordStrength />
 </template>
 
 <style scoped>
