@@ -27,5 +27,4 @@ defineProps({
     margin-top: 30px;
     margin: 0;
 }
-
 </style>
