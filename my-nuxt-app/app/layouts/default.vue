@@ -5,6 +5,7 @@
             <NuxtLink to="/">home</NuxtLink>
             <NuxtLink to="/dashboard">dashboard</NuxtLink>
             <NuxtLink to="/about">about</NuxtLink>
+            <NuxtLink to="/quotes">Quotes</NuxtLink>
         </ul>
     </header>
 
