@@ -2,25 +2,38 @@
   <div>
     <header class="head1 bg-blue-200">
         <ul class="list">
-            <li>home</li>
+            <NuxtLink to="/">home</NuxtLink>
             <li>project</li>
-            <li>about</li>
+            <NuxtLink to="/about">about</NuxtLink>
         </ul>
     </header>
 
     <main>
       <slot />
     </main>
+      </div>
+<!-- i wanna make its margin bottom 0 to the page it needs to be 0 , just take footer's place needs to be last page ....  -->
+  <div class="flex flex-col min-h-screen">
+    <!-- Page content -->
+    <main class="flex-grow text-center">
+      <p>Some content here...</p>
+    </main>
 
-    <footer>
-        <p>this is about the footer</p>
-        
-        © 2026 Moges App</footer>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+      Footer Content.....................
+    </footer>
   </div>
+
+
 </template>
 
 
 <style>
+footer{
+    margin-bottom: 0;
+
+}
 .head1{
     padding: 5px;
     margin: 0;
