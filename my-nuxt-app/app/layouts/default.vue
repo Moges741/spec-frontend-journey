@@ -3,7 +3,7 @@
     <header class="head1 bg-blue-200">
         <ul class="list">
             <NuxtLink to="/">home</NuxtLink>
-            <li>project</li>
+            <NuxtLink to="/dashboard">dashboard</NuxtLink>
             <NuxtLink to="/about">about</NuxtLink>
         </ul>
     </header>
