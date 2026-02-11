@@ -6,6 +6,7 @@
             <NuxtLink to="/dashboard">dashboard</NuxtLink>
             <NuxtLink to="/about">about</NuxtLink>
             <NuxtLink to="/quotes">Quotes</NuxtLink>
+            <NuxtLink to="/products">Products</NuxtLink>
         </ul>
     </header>
 
@@ -17,7 +18,6 @@
   <div class="flex flex-col min-h-screen">
     <!-- Page content -->
     <main class="flex-grow text-center">
-      <p>Some content here...</p>
     </main>
 
 
